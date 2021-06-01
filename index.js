@@ -7,14 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'img/ino.jpg'
         },
         {
-            name: 'ino',
-            img: 'img/ino.jpg'
-        },
-        {
-            name: 'kakashi',
-            img: 'img/kakashi.jpg'
-        },
-        {
             name: 'kakashi',
             img: 'img/kakashi.jpg'
         },
@@ -23,20 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'img/naruto.jpg'
         },
         {
-            name: 'naruto',
-            img: 'img/naruto.jpg'
-        },
-        {
             name: 'negi',
             img: 'img/negi.jpg'
-        },
-        {
-            name: 'negi',
-            img: 'img/negi.jpg'
-        },
-        {
-            name: 'sakura',
-            img: 'img/sakura.jpg'
         },
         {
             name: 'sakura',
@@ -45,6 +25,26 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: 'sasuke',
             img: 'img/sasuke.jpg'
+        },
+        {
+            name: 'ino',
+            img: 'img/ino.jpg'
+        },
+        {
+            name: 'kakashi',
+            img: 'img/kakashi.jpg'
+        },
+        {
+            name: 'naruto',
+            img: 'img/naruto.jpg'
+        },
+        {
+            name: 'negi',
+            img: 'img/negi.jpg'
+        },
+        {
+            name: 'sakura',
+            img: 'img/sakura.jpg'
         },
         {
             name: 'sasuke',

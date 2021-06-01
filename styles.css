@@ -69,3 +69,32 @@ main h3 {
     width: 620px;
     border: 10px var(--eerie-black) solid;
 }
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    color: white;
+    background-color: var(--vegas-gold);
+    border-top: 1px solid var(--corn);
+}
+footer p {
+    margin: 2rem auto;
+}
+footer i {
+    vertical-align: middle;
+}
+footer a {
+    color: #4367C4;
+}
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}

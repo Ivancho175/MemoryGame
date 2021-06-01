@@ -1,0 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+html {
+    font-family: 'Poppins', sans-serif;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 600px;
+    border: 10px black solid;
+}

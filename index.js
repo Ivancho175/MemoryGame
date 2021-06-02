@@ -169,8 +169,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 icon: 'success',
                 title: 'Wonderfull!',
                 text: 'Congratulations! You won!!!',
-                confirmButtonText: 'Great, once again!!!'
+                timer: 3000,
+                showConfirmButton: false
             })
+            window.setTimeout(function() {
+                location.reload();
+            }, 3000);
         }
     }
 

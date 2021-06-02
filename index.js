@@ -49,6 +49,54 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: 'sasuke',
             img: 'img/sasuke.jpg'
+        },
+        {
+            name: 'ino',
+            img: 'img/ino.jpg'
+        },
+        {
+            name: 'kakashi',
+            img: 'img/kakashi.jpg'
+        },
+        {
+            name: 'naruto',
+            img: 'img/naruto.jpg'
+        },
+        {
+            name: 'negi',
+            img: 'img/negi.jpg'
+        },
+        {
+            name: 'sakura',
+            img: 'img/sakura.jpg'
+        },
+        {
+            name: 'sasuke',
+            img: 'img/sasuke.jpg'
+        },
+        {
+            name: 'ino',
+            img: 'img/ino.jpg'
+        },
+        {
+            name: 'kakashi',
+            img: 'img/kakashi.jpg'
+        },
+        {
+            name: 'naruto',
+            img: 'img/naruto.jpg'
+        },
+        {
+            name: 'negi',
+            img: 'img/negi.jpg'
+        },
+        {
+            name: 'sakura',
+            img: 'img/sakura.jpg'
+        },
+        {
+            name: 'sasuke',
+            img: 'img/sasuke.jpg'
         }
     ]
 
@@ -80,10 +128,22 @@ document.addEventListener('DOMContentLoaded', () => {
         if (optionOneId == optionTwoId) {
             cards[optionOneId].setAttribute('src', 'img/konoha.jpg')
             cards[optionTwoId].setAttribute('src', 'img/konoha.jpg')
-            alert('You have clicked the same image!')
+            Swal.fire({
+                icon: 'warning',
+                title: 'Warning!',
+                text: 'You have clicked the same image!',
+                showConfirmButton: false,
+                timer: 1000,
+            })
         }
         else if (cardsChosen[0] === cardsChosen[1]) {
-            alert('You found a Match!')
+            Swal.fire({
+                icon: 'success',
+                title: 'Great!',
+                text: 'You found a Match!',
+                showConfirmButton: false,
+                timer: 1000,
+            })
             cards[optionOneId].setAttribute('src', 'img/logo.jpg')
             cards[optionTwoId].setAttribute('src', 'img/logo.jpg')
             cards[optionOneId].removeEventListener('click', flipCard)
@@ -92,13 +152,25 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             cards[optionOneId].setAttribute('src', 'img/konoha.jpg')
             cards[optionTwoId].setAttribute('src', 'img/konoha.jpg')
-            alert('Sorry, try again!')
+            Swal.fire({
+                icon: 'error',
+                title: 'Wrong!',
+                text: 'Sorry, try again!',
+                showConfirmButton: false,
+                timer: 1000,
+            })
         }
         cardsChosen = []
         cardsChosenId = []
         resultDisplay.textContent = cardsWon.length
         if (cardsWon.length === cardArray.length/2) {
             resultDisplay.textContent = 'Congratulations! You won!!!'
+            Swal.fire({
+                icon: 'success',
+                title: 'Wonderfull!',
+                text: 'Congratulations! You won!!!',
+                confirmButtonText: 'Great, once again!!!'
+            })
         }
     }
 

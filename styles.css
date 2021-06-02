@@ -91,6 +91,7 @@ footer i {
 }
 footer a {
     color: #4367C4;
+    text-decoration: none;
 }
 @media (max-width: 28.75em) {
   footer {

@@ -68,6 +68,7 @@ main h3 {
     height: auto;
     width: 620px;
     border: 10px var(--eerie-black) solid;
+    cursor: pointer;
 }
 footer {
     position: fixed;
